@@ -38,7 +38,7 @@
     {
         int ch;
         ch=getchar();
-        while(getchar()!='\n')
+        while(getchar()!='\n')           //跳过换行符
             continue;
         return ch;
     }
@@ -57,7 +57,7 @@
     {
         for(b;b>0;b--)
         {
-            for(int c=a;c>0;c--)
+            for(int c=a;c>0;c--)    //防止传入的参数a改变无法进行下一次循环
                 printf("%c",ch);
             printf("\n");
         }
@@ -97,8 +97,8 @@
     void s(double *a,double *b,double *c)
     {
         double temp;
-        double list[]={*a,*b,*c};
-        for(int i=0;i<2;i++)
+        double list[]={*a,*b,*c};        //将指针放入数组
+        for(int i=0;i<2;i++)             //冒泡排序
         {
             for(int j=0;j<2-i;j++)
             {
@@ -114,3 +114,129 @@
         *b=list[1];
         *c=list[2];
     }
+    6.用scanf输入字符时可能会出现和2.同样的问题，输入数字就不会，也需要将换行符跳过。
+    int main()
+    {
+        s();
+    }
+    void s()
+    {
+        char ch;
+        while(scanf("%c",&ch)!=EOF)       //或者使用scanf("%c%*c",&ch)将换行符跳过
+        {
+            if(ch>='a'&&ch<='z')
+            {
+                int a=(int)ch-96;
+                printf("该字符是字母，在字母表中位置为%d\n",a);
+            }
+            else if(ch>='A'&&ch<='Z')
+            {
+                int a=(int)ch-64;
+                printf("该字符是字母，在字母表中位置为%d\n",a);
+            }
+            else if(ch=='\n')        //跳过换行符
+                continue;
+            else
+                printf("该字符不是字母");
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
