@@ -225,6 +225,7 @@
     28.函数名被使用时总是由编译器把它转换为函数指针，所以可以直接赋给函数指针。
     29.字符串常量实际上是个指针，指向第一个字符。可以利用这个省去一些传统循环。
     30.
+    31.![image](https://github.com/xingminglyx/JavaWeb/blob/master/images/69.jpg)
     
     
     
