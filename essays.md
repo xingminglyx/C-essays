@@ -228,7 +228,7 @@
 31.![image](https://github.com/xingminglyx/JavaWeb/blob/master/images/69.jpg)
     32.如果程序失败，缓冲输出可能不会被是实际写入，这就可能使程序员得到关于错误出现位置的不正确结论，解决办法就是在每个用于调试
     的printf函数之后立即调用fflush，即fflush(stdout);它将迫使缓冲区的数据立即写入。
-    
+    33.如果函数体内没有任何语句，那么该函数就称为存根。
     
     
     
